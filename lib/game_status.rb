@@ -44,13 +44,11 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board).each do |index|
     #binding.pry
-    if board[index] == "X"
+  if board[won?[0]] == "X"
       "X"
-    else
+  else
       "O"
-    end
   end
 
 end
