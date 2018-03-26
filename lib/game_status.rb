@@ -44,12 +44,12 @@ def over?(board)
 end
 
 def winner(board)
-    #binding.pry
   if board[won?(board)[0]] == "X"
       "X"
   elsif board[won?(board)[0]] == "O"
     "O"
   else
     nil
+  binding.pry
   end
 end
