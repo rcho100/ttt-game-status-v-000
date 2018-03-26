@@ -47,7 +47,8 @@ def winner(board)
     #binding.pry
   if board[won?(board)[0]] == "X"
       "X"
-  else
-      "O"
+  elsif board[won?(board)[0]] == "O"
+    "O"
+  
   end
 end
