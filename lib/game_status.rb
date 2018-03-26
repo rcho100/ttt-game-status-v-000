@@ -46,7 +46,7 @@ end
 def winner(board)
   won?(board).each do |index|
     #binding.pry
-    if winning_combo_positions == board[index]
+    if board[index] == "X"
       "X"
     else
       "O"
